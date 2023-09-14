@@ -1,9 +1,9 @@
-import http from 'node:http'
+import { createServer } from 'node:http'
 
 // import { DatabaseMemory } from './database-memory.js'
 import { DatabasePostgres } from './database-postgres.js'
 
-const server = http.createServer()
+const server = createServer()
 
 // // const database = new DatabaseMemory()
 const database = new DatabasePostgres()
