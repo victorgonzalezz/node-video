@@ -1,9 +1,9 @@
-import { createServer } from 'node:http'
+import { fastify } from 'fastify'
 
 // import { DatabaseMemory } from './database-memory.js'
 import { DatabasePostgres } from './database-postgres.js'
 
-const server = createServer()
+const server = fastify()
 
 // // const database = new DatabaseMemory()
 const database = new DatabasePostgres()
