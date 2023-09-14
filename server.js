@@ -54,6 +54,7 @@ server.delete('/videos/:id', async (request, respond) => {
 })
 
 server.listen({
+    host: '0.0.0.0',
     // eslint-disable-next-line no-undef
     port: process.env.PORT ?? 3333,
 })
